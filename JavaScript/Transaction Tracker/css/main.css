@@ -1,0 +1,120 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+.amount {
+    text-align: right!important;
+}
+.error {
+    color: red;
+    font-size: 75%;
+}
+.fa {
+    margin: 0 2px;
+}
+fieldset {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.frm-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #666;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.frm-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+h2 {
+    font-size: 1.25em;
+}
+input[type=submit] {
+    background-color: #ddd;
+}
+input[type=submit]:hover {
+    background-color: #d9edf7;
+    cursor: pointer;
+}
+.right {
+    text-align: right;
+}
+select.frm-control {
+    height: 34px;
+}
+table.transactions {
+	background-color: transparent;
+	border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+table.transactions>thead {
+	display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table.transactions>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+table.transactions>thead>tr>th {
+	vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    font-weight: bold;
+}
+table.transactions>tbody {
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table.transactions>tbody>tr:hover {
+    background-color: #d9edf7 !important;
+}
+
+table.transactions>tbody>tr>td:nth-child(1) {
+    width: 550px;
+}
+table.transactions .fa:hover {
+    cursor: pointer;
+}
+table.transactions tr {
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table.transactions tr.credit {
+    background-color: #dff0d8;
+}
+table.transactions tr.debit {
+    background-color: #f2dede;
+}
+table.transactions tr>td,
+table.transactions tr>th {
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.tools {
+    text-align: center!important;
+}
+.total {
+    font-weight: bold;
+}
+.wrapper {
+    margin: auto;
+    padding: 1em;
+    width: 800px;
+}

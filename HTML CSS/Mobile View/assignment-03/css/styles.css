@@ -1,0 +1,885 @@
+/* VARIABLES */
+
+/* HOME PAGE */
+
+.input-error{
+    color: red;
+    border: 1px solid red;
+}
+/* menu */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header and Nav */
+
+header {
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 6px 2px #f6f7f8;
+
+}
+
+header a {
+    color: #3f3f3f;
+    text-decoration: none;
+    display: block;
+
+}
+.menu a:hover,
+.menu a:active {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background:  #f3d900;
+    padding: 1rem;
+    border-radius: 55%;
+    margin-right: 2rem;
+
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+svg rect {
+    width: 100px;
+    height: 8px;
+    fill: #3f3f3f;
+}
+
+.menu {
+    line-height: 1.5rem;
+    text-align:left;
+    font-size: 2.5rem;
+    font-family: Pro-bold;
+}
+
+.menu a {
+    color: #344256;
+    margin-left: 2rem;
+}
+/* Hiding the menu */
+
+header nav {
+    position: absolute;
+    top: 8rem;
+    left: 0rem;
+    width: 100vw;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+
+menu {
+    padding-bottom: 1rem;
+}
+
+.show-nav {
+    max-height: 25rem;
+}
+
+.menu {
+    list-style-type: none;
+    
+}
+
+.upchances {
+    display: flex;
+    align-items: center;
+    color: #f3d900;
+    font-family: Pro-bold;
+    margin-left: 3rem;
+}
+.upchances svg {
+    margin-right: .5rem;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+}
+.searchbar h1 {
+    font-family: Pro-bold;
+    font-weight: bold;
+    font-size: 40px;
+    color: #3e3e3e;
+    width: 15rem;
+    line-height: 2.5rem;
+
+}
+
+.searchbar {
+    margin-left: 4rem;
+    padding-right: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.network {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 3rem 0rem;
+    padding-bottom: 2rem;
+    
+}
+
+.network h1 {
+    padding: 0 3rem;
+    font-family: Pro-bold;
+    font-size: 45px;
+    line-height: 2.75rem;
+    width: 90%;
+    margin-bottom: 1rem;
+
+}
+
+.network p {
+    padding: 0 3rem;
+    width: 90%;
+    font-size: 20px;
+}
+
+.network a {
+    text-decoration: none;
+    color: #3e3e3e;
+    background-color: #f3d900;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    width: 45%;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-family: Pro-Bold;
+}
+
+
+.network a {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+
+    
+}
+
+
+
+.expertise div{
+    background: white;
+    width: 80%;
+    margin-left: 3rem;
+
+}
+
+.expertise div:first-child{
+    border-radius: .5rem .5rem 0 0;
+}
+.expertise div:last-child {
+    border-radius:  0 0 .5rem .5rem;
+    padding-bottom: 3rem;
+}
+
+.searchbar button {
+    padding: 6px 10px;
+    background: #3e3e3e;
+    border: none;
+    cursor: pointer;
+    height: 2rem;
+  }
+
+.searchbar svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: white;
+}
+
+.searchbar input {
+    border-radius: 10px 0 0 10px;
+    width: 15rem;
+    border: 1px solid black;
+    height: 2rem;
+}
+
+.find {
+    display: flex;
+    align-items: center;
+}
+
+.find button {
+    border-radius: 0 10px 10px 0px;
+}
+/* UNIVERSAL STYLES */
+
+/* Font */
+@font-face {
+    font-family: Pro-bold;
+    src: url(../font/SourceSansPro-Bold.ttf);
+}
+@font-face {
+    font-family: Pro-Regular;
+    src: url(../font/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Pro-bold-light;
+    src: url(../font/SourceSansPro-SemiBold.ttf);
+}
+body {
+    font-family: Pro-Regular;
+    
+}
+
+.background-color {
+    background: #3e3e3e;
+    padding-bottom: 4rem;
+}
+  
+.expertise svg {
+    height: 6rem;
+    width: 6rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.expertise h1 {
+    color: #344256;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-family: Pro-bold;
+    font-size: 25px;
+    
+
+}
+
+.expertise p {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 6rem;
+    font-size: 18px;
+}
+
+.expertise a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #344256;
+    font-family: Pro-bold;
+    border-bottom: 2.5px solid #f3d900;
+}
+
+.skills h2 {
+    font-size: 40px;
+    color: #344256;
+    font-family: Pro-bold;
+    width: 60%;
+    line-height: 1;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+}
+
+.skills h1{
+    display: flex;
+    font-family: Pro-bold;
+    color: #344256;
+    font-size: 25px;
+    margin-left: 1rem;
+
+}
+
+.skills img {
+    width:150px;
+    height:150px;
+}
+
+.skills div {
+    display: flex;
+}
+
+.skill-flex div {
+    margin-right: 5rem;
+}
+
+.skill-flex2 div {
+    margin-right: 5rem;
+}
+
+
+.skills-overflow {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 200rem;
+}
+
+.skills-overflow > div {
+    background-color: white;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    flex: 0 0 calc(100% - 1rem);
+}
+
+.needus {
+    background: #eaedef;
+    padding-bottom: 7rem;
+}
+
+.needus h1 {
+    font-size: 50px;
+    color: #344256;
+    line-height: 1;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 70%;
+    font-family: Pro-bold;
+    padding-top: 3rem;
+}
+
+.text-needus p {
+    margin-left: 3rem;
+    width: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #344256;
+    margin-top: 1.5rem;
+}
+
+.services {
+    background: white;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    border-radius: 1rem;
+
+}
+
+.services img {
+   height: 40vh;
+   width: 100%;
+   border-radius: 1rem 1rem 0  0;
+
+}
+
+.services {
+    margin-top: 3rem;
+}
+
+.services h2 {
+    color: #344256;
+    font-family: Pro-bold;
+    font-size: 22px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 18px;
+    color: #344256;
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.needus a {
+    text-decoration: none;
+    background-color: #f3d900;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.needus a {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+    font-size: 18px;
+    font-family: Pro-Bold;
+    color: #3e3e3e;
+
+ }
+
+ .application {
+     background: #3e3e3e;
+     color: white;
+     padding-bottom: 3rem;
+    padding-top: 3rem;
+ }
+
+ .application h1{
+    font-family: Pro-Bold;
+    font-size: 40px;
+    line-height: 1;   
+    width: 50%;
+    margin-left: 3rem;
+
+ }
+ 
+ .application p {
+     width: 55%;
+     margin-left: 3rem;
+ }
+
+ .application input{
+     border-radius: 10px 0 0 10px;
+     padding: .25rem;
+     border: 1px solid black;
+
+
+ }
+
+ .application button {
+    border-radius: 0 10px 10px 0;
+    padding: .25rem;
+    padding-right: .5rem ;
+    border: 1px  solid black;
+
+ }
+
+ .email {
+     margin-left: 3rem;
+     margin-top: 1rem;
+     display: flex;
+ }
+
+footer {
+    padding-top: 3rem;
+}
+
+footer .upchances {
+    margin-bottom: 2rem;
+}
+
+footer  li{
+    list-style-type: none;
+    margin-bottom: .75rem;
+    font-size: 16px;
+    color: #344256;
+}
+
+footer h2 {
+    margin-left: 2.4rem;
+    font-family: Pro-Bold;
+    font-size: 20px;
+
+}
+
+.hello-email {
+    border-bottom: 2.5px solid #f3d900;
+    width: 8.60rem;
+}
+
+.copyright {
+    background: #3e3e3e;
+    color: white;
+    padding: 3rem 0 2rem 0;
+}
+
+.copyright p {
+    margin-left: 3rem;
+    margin-top: .5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #344256;    
+}
+
+.directionfooter{
+    color: #344256;
+}
+
+
+
+
+
+/* HOW IT WORKS */
+
+.how-it-work {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.how-it-work div {
+    margin-bottom: 3rem;
+}
+
+.how-it-work h1 {
+    color: #3e3e3e;
+    font-size: 50px;
+    font-family: Pro-Bold;
+}
+
+.how-it-work h2 {
+    color: #3e3e3e;
+    font-size: 25px;
+    font-family: Pro-Bold;
+    margin-bottom: .5rem;
+}
+
+.how-it-work p {
+    color: #3e3e3e;
+    font-size: 17px;
+    font-family: Pro-bold-light;
+    width: 70%;
+}
+
+.project-form{
+    background: center / cover url('../img/project.jpeg');
+    height: 20rem;
+    width: 100%;
+    color: white;
+    font-family: Pro-Bold;
+    font-size: 36px;
+}
+
+.project-form h1{
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.fill-out {
+    background: #3e3e3e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Pro-bold-light;
+    font-size: 16px;
+}
+
+.fill-out input {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px;
+    margin-left: 3rem;
+    padding: .40rem 0;
+    margin-bottom: 3rem;
+
+}
+
+.fill-out label {
+    margin-left: 3rem;
+}
+
+.fill-out p {
+    font-family: Pro-Regular;
+    width: 50%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.fill-out textarea{
+    width: 80%;
+    margin-left: 3rem;
+    border-radius: 10px;
+}
+
+.fill-out a {
+    text-decoration: none;
+    background-color: #f3d900;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    color: #344256;
+    font-family: Pro-Bold;
+    font-size: 25px;
+}
+
+.fill-out a {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.input-placement div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Two-column View */
+@media only screen and (min-width: 750px) {
+
+    .searchbar h1{
+        width: 100%;
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .searchbar input{
+        width: 50rem;
+    }
+
+    .network a {
+        width: 15rem;
+    }
+
+    .expertise div {
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        padding-bottom: 3rem;
+        width: 40%;
+
+    }
+
+    .expertise{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .expertise div:first-child{
+        border-radius: 10px;
+    }
+    .expertise div:last-child {
+        border-radius:  10px;
+    }
+
+    .needus {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .needusinner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .services img {
+        border-radius: 10px 0 0 10px;
+        width: 50%;
+    }
+
+    .services p {
+        width: 70%;
+    }
+
+    .needus a{
+        width: 20%;
+    }
+
+    .application h1{
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .application p {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .email input{
+        width: 90%;
+    }
+
+    
+    .steps {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    
+    .steps div p{
+        width: 80%;
+    }
+
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+   }
+
+   .fill-out{
+       display: flex;
+   }
+
+   .fill-out input{
+       width: 40%;
+   }
+
+   .project-form h1{
+    text-align:left;
+    margin-left: 3rem;
+
+
+   }
+
+   .input-placement {
+       display: flex;
+       flex-wrap:wrap;
+   }
+
+   .input-placement div{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .input-placement input{
+       width: 20rem;
+   }
+
+   .input-placement textarea{
+       width: 45rem;
+       height: 60%;
+   }
+
+   .fill-out a {
+       width: 22%;
+   }
+
+   .input-placement div:last-child{
+       height: 90%;
+   }
+
+   .skills-overflow {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 200rem;
+}
+.skills-overflow > div {
+    background-color: white;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    flex: 0 3 calc(100% - 1rem);
+}
+}
+
+/* Largest View */
+@media only screen and (min-width: 1160px) {
+    .toggle-btn {
+        display: none;
+
+    }
+
+    .show-nav{
+        max-height: 25rem;
+    }
+    
+    header nav {
+        max-height: 100vh;
+        position: static;
+        overflow: visible;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    header{
+        display: flex;
+    }
+
+    nav hr{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        font-size: 24px;
+    }
+
+    .find {
+        width: 50%;
+    }
+
+    .background-color{
+        display: flex;
+    }
+
+    .expertise div{
+        margin-top: 3rem;
+        width: 42%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .needus img{
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .needus{
+        display: flex;
+    }
+
+    .needus-row {
+        display: flex;
+    }
+
+    .application h1{
+        width: 80%;
+    }
+
+    .application p{
+        width: 80%;
+    }
+
+    .email input{
+        width: 52%;
+    }
+
+    footer h1 {
+        display: flex;
+    }
+
+    .footer-row{
+        display: flex;
+        
+    }
+    .footer-flex{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;       
+    }
+
+    .upchances{
+        margin-left: 0;
+    }
+
+    .steps{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .input-placement input{
+        width: 40rem;
+    }
+
+    .input-placement textarea{
+        width: 83rem;
+    }
+
+    .fill-out a {
+        width: 12%;
+    }
+
+}

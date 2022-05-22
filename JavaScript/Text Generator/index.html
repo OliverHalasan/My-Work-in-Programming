@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1 - Meme Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Meme Generator</h1>
+        </header>
+        <main>
+            <section class="sidebar">
+                <h2>Meme Options</h2>
+                <div class="error"></div>
+                <form class="meme-form">
+                    <div class="form-control">
+                        <label for="meme-image">Meme Image</label>
+                        <select name="memeImage" id="meme-image">
+                            <option value="">Choose an image...</option>
+                            <option value="fry-meme">Fry Meme</option>
+                            <option value="one-does-not-simply-meme">One Does Not Simply Meme</option>
+                            <option value="most-interesting-man-meme">Most Interesting Man</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="meme-top-text">Top Text</label>
+                        <input type="text" name="memeTopText" id="meme-top-text">
+                    </div>
+                    <div class="form-control">
+                        <label for="meme-bottom-text">Bottom Text</label>
+                        <input type="text" name="memeBottomText" id="meme-bottom-text">
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" value="Generate">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </section>
+            <section class="content">
+                <h2>Generated Meme</h2>
+                <div class="meme-display">
+                    <p class="top-text"></p>
+                    <p class="bottom-text"></p>
+                    <img src="https://via.placeholder.com/550x300?text=Choose+an+image+from+the+dropdown" alt="Placeholder Image">
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+/* COLOUR PALETTE 
+
+Dark Background  #141414;
+Pink Accent      #f54b64;
+Text Colour      #fff;
+
+*/
+
+/* fonts */
+@font-face{
+    font-family: antonioLight;
+    src: url(../text/antonio/Antonio-Light.ttf);
+}
+
+@font-face {
+    font-family: b1612Regular;
+    src: url(../text/B612/B612-Regular.ttf);
+}
+/* Universal Styles & Helper Classes */
+body {
+    background: repeat url(../img/connectwork.png);
+    color: #fff;
+}
+header {
+    background: #141414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header h1 {
+    font-family: antonioLight;
+    margin-left: 40px;
+}
+
+.line1{
+    max-width: 450px;
+    margin-left: 1rem;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.drop-down {
+text-align: center;
+width: 2.5rem;
+height: 1.5rem;
+
+}
+
+
+/* NAV */
+
+nav {
+    background: #141414;
+    padding-bottom: 50px;
+}
+
+svg {
+    height: 3.5vh;
+    
+}
+
+.menu-list li {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: b1612Regular;
+    text-transform: uppercase;
+}
+.menu-list svg {
+    margin-right: 1rem;
+}
+.line1 {
+    height: 1px;
+}
+/* sign in */
+.Customer {
+    display: flex;
+    list-style-type: none;
+    margin-top: 2rem;
+}
+.Customer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1vh;
+    border: 1px solid #faf5ff;
+    padding: 0.5rem;
+    font-family: b1612Regular;
+    text-transform: uppercase;
+}
+.Customer a:last-child{
+    margin-right: 1rem;
+
+}
+
+
+/* dropdown */
+
+nav {
+    position: absolute;
+    left: 0;
+    background: #141414;
+    width: 0;
+    top: 5vh;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+   
+}
+
+.active-nav {
+    width: 100vh;
+}
+
+
+
+/* first article */
+.join-us {
+    background: no-repeat url(../img/laptopbed.jpg);
+    width: 129vh;
+    height: 55vh;
+
+}
+
+.line2{
+    border: 1px solid #f54b64;
+    max-width: 1rem;
+}
+.only-thing {
+    background: #141414;
+    width: 20rem;
+    height: 35rem;
+    margin-left: 4rem;
+    
+}
+.only-thing h1{
+    text-align: center;
+font-size: 3rem;
+font-family: antonioLight;
+margin-top: 2rem;
+margin-bottom: 2rem;
+
+}
+.only-thing p {
+text-align:center;
+font-family: b1612Regular;
+margin-top: 0rem;
+width: 20rem;
+padding: 0 1rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+}
+.only-thing a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-family: antonioLight;
+    position: absolute;
+    left: 10rem;
+
+}
+
+.old-school {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+.old-school h2 {
+    color: #f54b64;
+    margin-bottom: 1vh;
+    font-family: antonioLight;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.old-school h1 {
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    font-family: antonioLight;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.old-school p {
+    margin-bottom: 1vh;
+    font-family: b1612Regular;
+}
+
+.old-school a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-family: antonioLight;
+}
+
+.guides {
+    background: #141414;    
+    padding-top: 7.2vh;
+    padding-bottom: 7.2vh;
+}
+.guides img {
+    max-width: 900px;
+}
+.references {
+    background: #f54b64;
+    position: absolute;
+    left: 2rem;
+    top: 122.93vh;
+    width: 26rem;
+    
+}
+.references h1{
+    color: #141414;
+    margin-left: 2vh;
+    margin-top: 1vh;
+    font-family: antonioLight;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+.references h2 {
+    font-size: 40px;
+    margin-left: 2vh;
+    margin-bottom: 1vh;
+    font-family: antonioLight;
+    font-weight: 100;
+
+}
+
+.programs {
+display: flex;
+flex-flow: column;
+}
+
+.programs p {
+    margin-left: 25px;
+    margin-top: 30px;
+    font-family: b1612Regular;
+}
+
+.programs ul {
+    font-family: b1612Regular;
+
+}
+.programs a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: antonioLight;
+
+}
+
+.explore {
+    color: #141414;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+footer {
+    text-align: right;
+    margin-bottom: 20px;
+    font-family: b1612Regular;
+}
+header a:hover {
+color: #f54b64;
+}
+.Customer a:hover {
+    background: #f54b64;
+    color: white;
+}
+main a:hover{
+    color: #f54b64;
+}
+
+
+
+/* Media Query: Fixed Layout */
+
+@media only screen and (min-width: 1300px) {
+    body {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    .drop-down {
+        display: none;
+    }
+
+    .line1{
+        visibility: hidden;
+    }
+
+    nav{
+        width: 100vh;
+        position: static;
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        
+    }
+
+    
+
+    .menu-list{
+        display: flex;
+        margin-left: 10rem;
+    }
+
+    .menu-list li{
+        margin-right: 1rem;
+    }
+
+    .only-thing {
+        position: absolute;
+        left: 25rem;
+        top: 10rem;
+        width: 30rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .line2{
+        width: 1rem;
+    }
+
+    .only-thing h1{
+        width: 20rem;
+        
+    }
+    
+    .only-thing a {
+        position: static;
+    }
+
+    .old-school {
+        margin-top: 21vh;
+        padding-bottom: 5vh;
+        margin-left: 72vh;
+        margin-right: 2vh;
+    }
+    
+    .guides{
+        display: flex;
+    }
+
+    .references{
+        left: 46vh;
+        top: 80rem;
+        width: 30rem;
+    }
+
+    .programs{
+        margin-top: 5rem;
+    }
+
+    .explore {
+        font-size: 100px;
+
+    }
+}
+
+
+
+

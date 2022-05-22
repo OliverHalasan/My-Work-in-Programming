@@ -1,0 +1,160 @@
+<!-- Title -->
+
+Trend
+
+<!-- Navigation -->
+
+Home
+About
+Team
+Services
+Pricing
+Contact
+
+<!-- Carousel -->
+
+<!-- Slide 1 -->
+the best choice for your startup
+
+Design and style should make you look good and feel good.
+
+<!-- Slide 1 Button -->
+Choose Package
+
+
+<!-- Slide 2 -->
+Why to choose Trend?
+
+It is about uniqueness and precision, and making your brand memorable and enticing to your client.
+
+<!-- Slide 2 Button -->
+Our Services
+
+
+<!-- Slide 3 -->
+Created to make business easy.
+
+<!-- Slide 3 Button -->
+Contact Us
+
+
+<!-- Main -->
+
+About Us
+
+Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+
+<!-- Image Here -->
+
+How We Got Started
+
+Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+
+Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+
+<!-- button -->
+Meet the Team
+
+
+<!-- Team Section -->
+Team
+
+<!-- image 1 -->
+Dazzline Dean
+Web Developer
+Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominates extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+<!-- faux links -->
+twitter
+github
+
+<!-- image 2 -->
+Th&#7841;ch Thi &ETH;&agrave;n
+Web Designer
+Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+<!-- faux links -->
+instagram
+github
+
+<!-- image 3 -->
+Zo&euml; Dawson
+Photographer
+Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+<!-- faux links -->
+linkedin
+instagram
+
+
+<!-- Services Section -->
+Our Services
+
+<!-- Column 1 -->
+Retina Ready
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid iusto adipisci excepturi dolore necessitatibus? Deleniti sed optio earum cum corrupti id, sunt vitae, et quia quas, obcaecati vero ratione.
+
+<!-- Column 2 -->
+Lightweight
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid iusto adipisci excepturi dolore necessitatibus? Deleniti sed optio earum cum corrupti id, sunt vitae, et quia quas, obcaecati vero ratione.
+
+<!-- Column 3 -->
+Eco Friendly
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid iusto adipisci excepturi dolore necessitatibus? Deleniti sed optio earum cum corrupti id, sunt vitae, et quia quas, obcaecati vero ratione.
+
+<!-- Column 4 -->
+Responsive
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid iusto adipisci excepturi dolore necessitatibus? Deleniti sed optio earum cum corrupti id, sunt vitae, et quia quas, obcaecati vero ratione.
+Learn More
+
+
+<!-- Pricing Section -->
+Pricing
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus incidunt ipsum sint maxime. Laudantium dolore natus officiis voluptates! Provident voluptas ipsam reiciendis soluta accusamus! Earum debitis nisi quia asperiores.
+
+<!-- Card 1 -->
+Starter Plan
+$7/mo
+Basic customer support for small business
+10 Project
+20 Pages
+20 Emails
+100 Images
+Get Started
+
+<!-- Card 2 -->
+Best Value
+Regular Plan
+$19/mo
+Basic customer support for small business
+15 Project
+40 Pages
+40 Emails
+200 Images
+Get Started
+
+<!-- Card 3 -->
+Plus Plan
+$79/mo
+Basic customer support for small business
+Unlimited Project
+100 Pages
+100 Emails
+700 Images
+Get Started
+
+
+<!-- Contact Us Section -->
+Contact Us
+Name
+Email
+Message
+Send
+
+
+<!-- Footer -->
+Trend &copy; 2021
+This website was created as an academic exercise.
+

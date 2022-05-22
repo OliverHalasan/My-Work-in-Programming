@@ -1,0 +1,232 @@
+/*
+
+COLOUR PALETTE
+
+orange accent       ff8e2d
+teal                20abad
+darker teal         007c84
+off-white           eeeaeb
+
+GOOGLE FONTS 
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Pacifico', cursive;
+
+*/
+
+/* UNIVERSAL STYLES */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #20abad;
+    color: #eeeaeb;
+}
+
+h1,h2{
+    font-family: 'Pacifico', cursive;
+
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 a,
+ul.menu a {
+    color: #eeeaeb;
+    text-decoration: none;
+}
+
+nav {
+    max-width: 58rem;
+    margin: 0 auto;
+}
+/* MOBILE VIEW */
+svg {
+    display: none;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+ul.menu a {
+    text-transform: uppercase;
+    padding: 1rem;
+    display: block;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+ul.menu a:hover,
+ul.menu a:active {
+    background-color: #ff8e2d;
+    border-radius: 5px;
+}
+
+ul.submenu {
+    padding: 0 1rem;
+}
+
+ul.menu li:last-child {
+    padding-bottom: 2rem;
+}
+
+ul.submenu >li a {
+   text-decoration: none;
+}
+
+
+
+/* HERO BANNER */
+header section {
+    background: left / cover url('../img/grapefruit-bg-sm.jpg');
+    height: 40rem;
+    text-align: center;
+}
+
+header section h2{
+    padding-top: 12rem;
+    font-size: 4rem;
+}
+
+
+
+header section p {
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+header section p a {
+    background: #009ba3;
+    padding: 1rem; border-radius: 10px;
+    text-transform: uppercase;
+    color: #eeeaeb;
+}
+header section p a :hover{
+background-color: #007c84;
+}
+
+
+/* DESKTOP VIEW */
+@media screen and (min-width:45rem) {
+    ul.menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    ul.menu li {
+        flex: 1 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    ul.submenu {
+        padding: 0;
+    }
+
+    ul.menu li:last-child {
+        padding-bottom: 0;
+    }
+
+    svg {
+        display: block;
+        width: 1rem;
+        margin-left: 0.75rem;
+    }
+
+    svg path {
+        fill: #fff;
+    }
+
+    li.dropdown a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.submenu {
+        background-color: #007c84;
+        border-radius: 0 0 5px 5px;
+        position: absolute;
+        right: -10%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    ul.submenu li {
+        text-align: left;
+    }
+
+    ul.menu > li {
+        margin: 1rem;
+    }
+
+    ul.menu li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    ul.submenu {
+        transition: all 0.5s ease;
+    }
+
+    ul.submenu a:hover {
+        background-color: #007c84;
+        text-decoration: underline;
+    }
+
+    ul.menu li:focus-within > ul,
+    ul.menu li > ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    header section {
+        height: 50rem;
+        /* Change background property for desktop view. */
+        display: flex;
+        /* Using properties for a flex container, center all of the flex items. */
+    }
+    
+    header section div {
+        width: 48%;
+        padding: 2%;
+    }
+
+    header section h2 {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 46rem) {
+        ul.submenu {
+            right: unset;
+            left: 0;
+        }
+    }
+}
+/* LARGEST VIEW */
+
+@media screen and (min-width: 80rem){
+    header section div {
+        /* what is the maximum width that two elemets 
+        can occupy in an 80rem container? */
+        width: 45%;
+       padding: 7%;
+    }
+
+    header section {
+        background: left / cover url('../img/grapefruit-bg.jpg');
+        height: 50rem;
+        text-align: center;
+    }
+}

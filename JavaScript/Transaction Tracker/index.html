@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Financial Tracker - Assignment 3</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="wrapper">
+		<h1>Transaction Tracker</h1>
+		<form class="frm-transactions">
+			<fieldset>
+				<legend>Add Transaction</legend>
+				<div class="frm-group">
+					<input class="frm-control" type="text" name="description" size="30" placeholder="description" />
+				</div>
+				<div class="frm-group">
+					<select class="frm-control" name="type">
+						<option value="">type</option>
+						<option value="debit">debit</option>
+						<option value="credit">credit</option>
+					</select>
+				</div>
+				<div class="frm-group">
+					<i class="edit fa fa-dollar"></i>
+					<input class="frm-control" type="number" name="currency" min="0" max="9999" step="0.01" size="4" placeholder="0.00" />
+				</div>
+				<div class="frm-group">
+					<input class="frm-control" type="submit" value="add" />
+				</div>
+				<div class="error"></div>
+			</fieldset>
+		</form>
+		<h2>Transactions</h2>
+		<table class="transactions">
+			<thead>
+				<tr>
+					<td colspan="4" class="right">
+						Total debits: <span class="total debits">$0.00</span>
+						Total credits: <span class="total credits">$0.00</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<th>Type</th>
+					<th class="amount">Amount</th>
+					<th class="tools">Tools</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- SAMPLE MARKUP FOR TRANSACTIONS
+				<tr class="debit">
+					<td>Tim Horton's</td>
+					<td>debit</td>
+					<td class="amount">$1.89</td>
+					<td class="tools">
+						<i class="delete fa fa-trash-o"></i>
+					</td>
+				</tr>
+				<tr class="debit">
+					<td>NAIT Bookstore - JavaScript book</td>
+					<td>debit</td>
+					<td class="amount">$28.47</td>
+					<td class="tools">
+						<i class="delete fa fa-trash-o"></i>
+					</td>
+				</tr>
+				<tr class="credit">
+					<td>Payday</td>
+					<td>credit</td>
+					<td class="amount">$1223.98</td>
+					<td class="tools">
+						<i class="delete fa fa-trash-o"></i>
+					</td>
+				</tr>
+				<tr class="debit">
+					<td>Rent</td>
+					<td>debit</td>
+					<td class="amount">$750.00</td>
+					<td class="tools">
+						<i class="delete fa fa-trash-o"></i>
+					</td>
+				</tr>
+				-->
+			</tbody>
+		</table>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>

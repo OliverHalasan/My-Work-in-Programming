@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tale of Squirrel Nutkin By Beatrix Potter</title>
+
+    <!-- Document Info -->
+    <meta name="author" content="Oliver Halasan Jhalasan1@nait.ca">
+    <meta name="description" content="This website lays out the Tale of Squirrel Nutkin in a singe HTML document using
+    overflow techniques and on-page achors.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Add toggle button, heading, and search bar here. -->
+        <div>
+            <div class="toggle-btn">
+                <img src="img/emblem.png" alt="Circular Squirrel Nutkin Etching">
+                <p>Open Navigation</p>
+            </div>
+
+            <h1>The Tale of Squirrel Nutkin</h1>
+            <div>
+                <form action="#" method="get" role="search">
+                    <label for="searchbar" class="sr-only">Search Our Achives</label>
+                    <input type="text" id="searchbar" placeholder="Search Our Archives">
+                </form>
+            </div>
+        </div>
+        <!-- Add <nav> here. -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#pg-1">Page 1</a></li>
+                    <li><a href="#pg-3">Page 3</a></li>
+                    <li><a href="#pg-5">Page 5</a></li>
+                    <li><a href="#pg-7">Page 7</a></li>
+                    <li><a href="#pg-9">Page 9</a></li>
+                    <li><a href="#pg-11">Page 11</a></li>
+                    <li><a href="#pg-15">Page 15</a></li>
+                    <li><a href="#pg-17">Page 17</a></li>
+                    <li><a href="#pg-19">Page 19</a></li>
+                    <li><a href="#pg-21">Page 21</a></li>
+                    <li><a href="#pg-23">Page 23</a></li>
+                    <li><a href="#pg-25">Page 25</a></li>
+                    <li><a href="#pg-27">Page 27</a></li>
+
+
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="horizontal-scroll-wrapper">
+
+            <!-- Page 1 -->
+            <div id="pg-1">
+                <h2>The Tale of Squirrel Nutkin</h2>
+                <picture>
+                    <source srcset="img/pg-1.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-1-thumb.jpg" alt="Squirrel siblings prepare their offerings.">
+                </picture>
+                
+                <p>By Beatrix Potter</p>
+                <p>FREDERICK WARNE</p>
+                <p>1903 by Frederick Warne & Co.</p>
+                <p>Printed and bound in Great Britain by William Clowes Limited, Beccles and London</p>
+                <p>A STORY FOR NORAH</p>
+            </div>
+
+            <!-- Page 2 -->
+            <div>
+                <picture>
+                    <source srcset="img/pg-2.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-2-thumb.jpg" alt="Squirrel Nutkin chills in his tree.">
+                </picture>
+                <p>This is a Tale about a tail &mdash; a tail that belonged to a little red squirrel, and his name was Nutkin.</p>
+            </div>
+
+            <!-- Page 3 -->
+            <div id="pg-3">
+                <p>He had a brother called Twinkleberry, and a great many cousins: they lived in a wood at the edge of a lake.</p>
+                <picture>
+                    <source srcset="img/pg-3.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-3-thumb.jpg" alt="Old Brown returns to his home at the base of the old oak tree.">
+                </picture>
+                <p>In the middle of the lake there is an island covered with trees and nut bushes; and amongst those trees stands a hollow oak-tree, which is the house of an owl who is called Old Brown.</p>
+            </div>
+
+            <!-- Page 4 -->
+            <div>
+                <picture>
+                    <source srcset="img/pg-4.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-4-thumb.jpg" alt="Squirrel siblings gather by the lake shore.">
+                </picture>
+                One autumn when the nuts were ripe, and the leaves on the hazel bushes were golden and green &mdash; Nutkin and Twinkleberry and all the other little squirrels came out of the wood, and down to the edge of the lake.
+            </div>
+
+            <!-- Page 5 -->
+            <div id="pg-5">
+                <p>They made little rafts out of twigs, and they paddled away over the water to Owl Island to gather nuts.</p>
+                <picture>
+                    <source srcset="img/pg-5.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-5-thumb.jpg" alt="The siblings cross the lake together.">
+                </picture>
+                <p>Each squirrel had a little sack and a large oar, and spread out his tail for a sail.</p>
+            </div>
+
+            <!-- Page 6 -->
+            <div>
+                <p>They also took with them an offering of three fat mice as a present for Old Brown, and put them down upon his door-step.</p>
+                <picture>
+                    <source srcset="img/pg-6.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-6-thumb.jpg" alt="The siblings gather 'round Old Brown to offer their tributes.">
+                </picture>
+                <p>Then Twinkleberry and the other little squirrels each made a low bow, and said politely &mdash;</p>
+
+                <p>"Old Mr. Brown, will you favour us with permission to gather nuts upon your island?"</p>
+            </div>
+
+            <!-- Page 7 -->
+            <div id="pg-7">
+                <p>But Nutkin was excessively impertinent in his manners. He bobbed up and down like a little red cherry, singing—</p>
+
+                <p class="riddle">"Riddle me, riddle me, rot-tot-tote!<br/>
+                A little wee man, in a red red coat!<br/>
+                A staff in his hand, and a stone in his throat;<br/>
+                If you'll tell me this riddle, I'll give you a groat."</p>
+
+                <picture>
+                    <source srcset="img/pg-7.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-7-thumb.jpg" alt="Squirrel Nutkin pesters Old Brown.">
+                </picture>
+                
+                <p>Now this riddle is as old as the hills; Mr. Brown paid no attention whatever to Nutkin.</p>
+
+                <p>He shut his eyes obstinately and went to sleep.</p>
+            </div>
+
+            <!-- Page 8 -->
+            <div>
+                <p>The squirrels filled their little sacks with nuts, and sailed away home in the evening.</p>
+                <picture>
+                    <source srcset="img/pg-8.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-8-thumb.jpg" alt="The siblings, minus Nutkin, gather their acorns.">
+                </picture>
+            </div>
+
+            <!-- Page 9 -->
+            <div id="pg-9">
+                <p>But next morning they all came back again to Owl Island; and Twinkleberry and the others brought a fine fat mole, and laid it on the stone in front of Old Brown's doorway, and said &mdash;</p>
+                <picture>
+                    <source srcset="img/pg-9.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-9-thumb.jpg" alt="Twinkleberry, the class traitor, offers Old Brown a mole.">
+                </picture>
+                <p>"Mr. Brown, will you favour us with your gracious permission to gather some more nuts?"</p>
+            </div>
+
+            <!-- Page 10 -->
+            <div>
+                <p>But Nutkin, who had no respect, began to dance up and down, tickling old Mr. Brown with a nettle and singing &mdash;</p>
+
+                <p class="riddle">"Old Mr. B! Riddle-me-ree!<br/>
+                Hitty Pitty within the wall,<br/>
+                Hitty Pitty without the wall;<br/>
+                If you touch Hitty Pitty,<br/>
+                Hitty Pitty will bite you!"</p>
+
+                <picture>
+                    <source srcset="img/pg-10.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-10-thumb.jpg" alt="Nutkin prods Old Brown with a prickly nettle.">
+                </picture>
+
+                <p>Mr. Brown woke up suddenly and carried the mole into his house.</p>
+            </div>
+
+            <!-- Page 11 -->
+            <div id="pg-11">
+                <p>He shut the door in Nutkin's face. Presently a little thread of blue smoke from a wood fire came up from the top of the tree, and Nutkin peeped through the key-hole and sang &mdash;</p>
+
+                <p class="riddle">"A house full, a hole full!<br/>
+                And you cannot gather a bowl-full!"</p> 
+                <picture>
+                    <source srcset="img/pg-11.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-11-thumb.jpg" alt="Nutkin shouts at Old Brown's closed door.">
+                </picture>
+            </div>
+
+            <!-- Page 12 -->
+            <div>
+                <p>The squirrels searched for nuts all over the island and filled their little sacks.</p>
+                <picture>
+                    <source srcset="img/pg-12.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-12-thumb.jpg" alt="Nutkin loiters outside Old Brown's door while his siblings work.">
+                </picture>
+                <p>But Nutkin gathered oak-apples—yellow and scarlet—and sat upon a beech-stump playing marbles, and watching the door of old Mr. Brown.</p>
+            </div>
+
+            <!-- Page 13 -->
+            <div id="pg-13">
+                <p>On the third day the squirrels got up very early and went fishing; they caught seven fat minnows as a present for Old Brown.</p>
+                <picture>
+                    <source srcset="img/pg-13.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-13-thumb.jpg" alt="The siblings fish for minnows in the lake.">
+                </picture>
+                <p>They paddled over the lake and landed under a crooked chestnut tree on Owl Island.</p>
+            </div>
+
+            <!-- Page 14 -->
+            <div>
+                <p>Twinkleberry and six other little squirrels each carried a fat minnow; but Nutkin, who had no nice manners, brought no present at all. He ran in front, singing &mdash;</p>
+
+                <p class="riddle">"The man in the wilderness said to me,<br/>
+                'How many strawberries grow in the sea?'<br/>
+                I answered him as I thought good—<br/>
+                'As many red herrings as grow in the wood.'"</p>
+
+                <picture>
+                    <source srcset="img/pg-14.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-14-thumb.jpg" alt="Nutkin frolicks ahead of the others.">
+                </picture>
+                <p>But old Mr. Brown took no interest in riddles—not even when the answer was provided for him.</p>
+            </div>
+
+            <!-- Page 15 -->
+            <div id="pg-15">
+                <p>On the fourth day the squirrels brought a present of six fat beetles, which were as good as plums in plum-pudding for Old Brown. Each beetle was wrapped up carefully in a dock-leaf, fastened with a pine-needle pin.</p>
+
+                <picture>
+                    <source srcset="img/pg-15.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-15-thumb.jpg" alt="The siblings present their neatly-bundled offerings.">
+                </picture>
+
+                <p>But Nutkin sang as rudely as ever &mdash;</p>
+
+                <p class="riddle">"Old Mr. B! riddle-me-ree<br/>
+                Flour of England, fruit of Spain,<br/>
+                Met together in a shower of rain;<br/>
+                Put in a bag tied round with a string,<br/>
+                If you'll tell me this riddle, I'll give you a ring!"</p>
+
+                <p>Which was ridiculous of Nutkin, because he had not got any ring to give to Old Brown.</p>
+            </div>
+
+            <!-- Page 16 -->
+            <div>
+                <picture>
+                    <source srcset="img/pg-16.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-16-thumb.jpg" alt="Nutkin naffs off once more.">
+                </picture>
+
+                <p>The other squirrels hunted up and down the nut bushes; but Nutkin gathered robin's pincushions off a briar bush, and stuck them full of pine-needle pins.</p>
+            </div>
+
+            <!-- Page 17 -->
+            <div id="pg-17">
+                <p>On the fifth day the squirrels brought a present of wild honey; it was so sweet and sticky that they licked their fingers as they put it down upon the stone. They had stolen it out of a bumble bees' nest on the tippitty top of the hill.</p>
+                <picture>
+                    <source srcset="img/pg-17.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-17-thumb.jpg" alt="The siblings step back from the offering, licking their paws clean.">
+                </picture>
+                <p>But Nutkin skipped up and down, singing &mdash;</p>
+
+                <p class="riddle">"Hum-a-bum! buzz! buzz! Hum-a-bum buzz!<br/>
+                As I went over Tipple-tine<br/>
+                I met a flock of bonny swine;<br/>
+                Some yellow-nacked, some yellow backed!<br/>
+                They were the very bonniest swine<br/>
+                That e'er went over Tipple-tine."</p>
+            </div>
+
+            <!-- Page 18 -->
+            <div>
+                <p>Old Mr. Brown turned up his eyes in disgust at the impertinence of Nutkin.</p>
+                <picture>
+                    <source srcset="img/pg-18.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-18-thumb.jpg" alt="Nutkin peers through the window of Old Brown's tree; Old Brown turns away in an attempt to enjoy his tea.">
+                </picture>
+                <p>But he ate up the honey!</p>
+            </div>
+
+            <!-- Page 19 -->
+            <div id="pg-19">
+                <p>The squirrels filled their little sacks with nuts.</p>
+                <picture>
+                    <source srcset="img/pg-19.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-19-thumb.jpg" alt="In a shocking turn of events, Nutkin doesn't help his siblings.">
+                </picture>
+                <p>But Nutkin sat upon a big flat rock, and played ninepins with a crab apple and green fir-cones.</p>
+            </div>
+
+            <!-- Page 20 -->
+            <div>
+                <p>On the sixth day, which was Saturday, the squirrels came again for the last time; they brought a new-laid egg in a little rush basket as a last parting present for Old Brown.</p>
+                <picture>
+                    <source srcset="img/pg-20.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-20-thumb.jpg" alt="Nutkin dashes ahead of the others.">
+                </picture>
+                <p>But Nutkin ran in front laughing, and shouting &mdash;</p>
+
+                <p class="riddle">"Humpty Dumpty lies in the beck,<br/>
+                With a white counterpane round his neck,<br/>
+                Forty doctors and forty wrights,<br/>
+                Cannot put Humpty Dumpty to rights!"</p>
+            </div>
+
+            <!-- Page 21 -->
+            <div id="pg-21">
+                <p>Now old Mr. Brown took an interest in eggs; he opened one eye and shut it again.</p>
+                <picture>
+                    <source srcset="img/pg-21.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-21-thumb.jpg" alt="Nutkin leans into Old Brown, taunting him.">
+                </picture>
+                <p>But still he did not speak.</p>
+            </div>
+
+            <!-- Page 22 -->
+            <div>
+                <p>Nutkin became more and more impertinent &mdash;</p>
+
+                <p class="riddle">"Old Mr. B! Old Mr. B!<br/>
+                Hickamore, Hackamore, on the King's kitchen door;<br/>
+                All the King's horses, and all the King's men,<br/>
+                Couldn't drive Hickamore, Hackamore,<br/>
+                Off the King's kitchen door."</p>
+                <picture>
+                    <source srcset="img/pg-22.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-22-thumb.jpg" alt="Nutkin continues to put on a show, much to Old Brown's chagrin.">
+                </picture>
+                <p>Nutkin danced up and down like a sunbeam; but still Old Brown said nothing at all.</p>
+            </div>
+
+            <!-- Page 23 -->
+            <div id="pg-23">
+                <p>Nutkin began again &mdash;</p>
+
+                <p class="riddle">"Arthur O'Bower has broken his band,<br/>
+                He comes roaring up the land!<br/>
+                The King of Scots with all his power,<br/>
+                Cannot turn Arthur of the Bower!"</p>
+
+                <p>Nutkin made a whirring noise to sound like the wind, and he took a running jump right onto the head of Old Brown!...</p>
+                <picture>
+                    <source srcset="img/pg-23.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-23-thumb.jpg" alt="Nutkin leaps at Old Brown.">
+                </picture>
+
+                <p>Then all at once there was a flutterment and a scufflement and a loud <span>"Squeak!"</span></p>
+            </div>
+
+            <!-- Page 24 -->
+            <div>
+                <p>The other squirrels scuttered away into the bushes.</p>
+                <picture>
+                    <source srcset="img/pg-24.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-24-thumb.jpg" alt="The other squirrels cower around the other side of the tree.">
+                </picture>
+                <p>When they came back very cautiously, peeping round the tree—there was Old Brown sitting on his door-step, quite still, with his eyes closed, as if nothing had happened.</p>
+            </div>
+
+            <!-- Page 25 -->
+            <div id="pg-25">
+                <p><em>But Nutkin was in his waistcoat pocket!</em></p>
+                <picture>
+                    <source srcset="img/pg-25.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-25-thumb.jpg" alt="Old Brown pins Nutkin in place.">
+                </picture>
+                <p>This looks like the end of the story; but it isn't.</p>
+            </div>
+
+            <!-- Page 26 -->
+            <div>
+                <p>Old Brown carried Nutkin into his house, and held him up by the tail, intending to skin him; but Nutkin pulled so very hard that his tail broke in two, and he dashed up the staircase and escaped out of the attic window.</p>
+                <picture>
+                    <source srcset="img/pg-26.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-26-thumb.jpg" alt="Old Brown watches, tail still in his beak, as Nutkin dashes off.">
+                </picture>
+            </div>
+
+            <!-- Page 27 -->
+            <div id="pg-27">
+                <p>And to this day, if you meet Nutkin up a tree and ask him a riddle, he will throw sticks at you, and stamp his feet and scold, and shout &mdash;</p>
+                <picture>
+                    <source srcset="img/pg-27.jpg" media="(min-width: 720px)">
+                    <img src="img/thumbnails/pg-27-thumb.jpg" alt="Nutkin, sans-tail, shouts at his younger sibling.">
+                </picture>
+                <p><em>"Cuck-cuck-cuck-cur-r-r-cuck-k-k!"</em></p>
+                <p><span>THE END</span></p>
+            </div>
+        </div> <!-- end of .horizontal-scroll-wrapper -->
+    </main>
+
+    <footer>
+        <h3>Courtesy of Project Gutenberg</h3>
+        <p>Originally printed in 1903 by Frederick Warne &amp; Co.</p>
+    </footer>
+
+    <!-- Add <script> element here. -->
+        <script src="js/main.js"></script>
+</body>
+</html>

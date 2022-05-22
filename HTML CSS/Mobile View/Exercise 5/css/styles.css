@@ -1,0 +1,175 @@
+/* CSS Variables */
+
+:root {
+  --black: #0e0e0e;
+}
+
+/* Universal Styles */
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: var(--black);
+}
+
+header,
+footer {
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+}
+
+/* Header & Navigation */
+h1 {
+  font-family: 'Parisienne', cursive;
+}
+
+header {
+  position: relative;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+header img{
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.toogle-btn{
+    font-size: 0.8rem
+}
+
+.nav-links{
+  padding-bottom: 1rem;
+}
+
+.nav-links li a{
+  padding: 0.5rem 1;
+  line-height: 2rem;
+  color: white;
+}
+
+header nav {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--black);
+  transition: max-height 0.7s ease-in-out;
+}
+
+.show-nav {
+  max-height: 26.25rem;
+}
+
+input [id=searchbar] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+/* Accessible Search Bar */
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+/* Main Content */
+main {
+  background: url('../img/botanical-tile.jpeg');
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-scroll-wrapper > div {
+    background-color: white;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    border: 0.25rem double var(--black);
+    flex: 0 0 calc(100% - 1rem);
+}
+
+.horizontal-scroll-wrapper > div img,
+picture,
+source {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.horizontal-scroll-wrapper > div p {
+  max-width: 60ch;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+p.riddle {
+  padding-left: 3rem;
+  font-style: italic;
+}
+
+p span {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 2.5rem;
+}
+/* Styling the Title Page */
+.horizontal-scroll-wrapper > div:first-of-type {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .horizontal-scroll-wrapper > div {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+/* Switches the flex items in the <header> to a fixed-width layout. */
+@media only screen and (min-width: 1280px) {
+
+  header > div {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .show-nav {
+    max-height: 3rem;
+  }
+
+    .horizontal-scroll-wrapper > div {
+      flex: 0 0 calc(100% / 3);
+    }
+
+}

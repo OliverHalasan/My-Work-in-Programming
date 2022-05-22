@@ -1,0 +1,92 @@
+/* simple layout */
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: inline-grid;
+    grid-gap: 1em;
+    grid-template-areas: "sidebar content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 20em;
+}
+
+.content {
+    grid-area: content;
+}
+
+/* styles */
+
+.error {
+    color: red;
+    margin: 1rem 0;
+}
+
+.form-control {
+    width: 20rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-control>label {
+    display: block;
+}
+
+.form-control>input,
+.form-control>select {
+    width: 100%;
+    border: 1px solid #999;
+    padding: 1px;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.form-control>input[type=submit],
+.form-control>input[type=reset] {
+    width: 25%;
+}
+
+/* content layout */
+.meme-display {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* display for the meme */
+.meme-display>p {
+    width: 550px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    text-transform: uppercase;
+}
+
+.meme-display>p.bottom-text {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.meme-display>p.top-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.meme-display>img {
+    width: 550px;
+
+    grid-column: 1;
+    grid-row: 1/4;
+
+    z-index: -1;
+}
