@@ -1,0 +1,94 @@
+body{
+  margin: 0 auto;
+  width: 960px;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+}
+h1 {
+  font-family: 'Nunito' , sans-serif;
+}
+p, input, label{
+  font-family: 'Open sans' , sans-serif;
+}
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid green;
+    font-size: large;
+    color: green;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+}
+main {
+    display: flex;
+    align-items: baseline;
+}
+main h1 {
+    font-size: 25px;
+}
+.SignUp {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.SignUp div {
+    display: flex;
+    flex-direction: column;
+}
+.SignUp input{
+    width: 85%;
+    height: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.Login div{
+    display: flex;
+    flex-direction: column;
+}
+.Login input{
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* WARNING Messages */
+.warning {
+    color: red;
+}
+
+/* Success Messages */
+.success {
+    color: green;
+}
+.date {
+    display: flex;
+    flex-direction: row;
+}
+
+.date input{
+    width: 20%;
+}

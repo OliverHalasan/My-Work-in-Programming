@@ -1,0 +1,27 @@
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.exe
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.deps.json
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.runtimeconfig.json
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.runtimeconfig.dev.json
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.dll
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.pdb
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.csprojAssemblyReference.cache
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.AssemblyInfoInputs.cache
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.AssemblyInfo.cs
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.csproj.CoreCompileInputs.cache
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.dll
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.pdb
+C:\Users\bless\Documents\IT World\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.genruntimeconfig.cache
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.exe
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.deps.json
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.runtimeconfig.json
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.runtimeconfig.dev.json
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.dll
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\bin\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.pdb
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.csproj.AssemblyReference.cache
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.AssemblyInfoInputs.cache
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.AssemblyInfo.cs
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.csproj.CoreCompileInputs.cache
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.dll
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.pdb
+C:\Users\bless\Desktop\My-Work-in-Programming\C#\CorePortfolio01-OliverHalasan\obj\Debug\netcoreapp3.1\CorePortfolio01-OliverHalasan.genruntimeconfig.cache

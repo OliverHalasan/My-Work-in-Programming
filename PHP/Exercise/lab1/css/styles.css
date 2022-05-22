@@ -1,0 +1,158 @@
+:root {
+    --black: #11151f;
+    --white: #fcfcfc;
+    --mid-grey: #f1f1f1;
+    --dark-grey: #d4d4d4;
+    --yellow: #e5b261; 
+    --grey-blue: #374456;
+    --grey-blue-hover: #283040
+}
+body {
+    margin: 0 auto;
+    width: 960px;
+}
+
+header {
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 6px 2px #f6f7f8;
+
+}
+
+header a {
+    color: #3f3f3f;
+    text-decoration: none;
+    display: block;
+
+}
+.menu a:hover,
+.menu a:active {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.menu {
+    line-height: 1.5rem;
+    text-align:left;
+    font-size: 2.5rem;
+    font-family: Pro-bold;
+}
+
+.menu a {
+    color: #344256;
+    margin-left: 2rem;
+}
+
+header nav {
+    max-height: 100vh;
+    position: static;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+header{
+    display: flex;
+}
+
+nav hr{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    font-size: 24px;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.25rem;
+
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
+    width: 70%;
+    margin: 0;
+}
+
+
+
+h1 {
+    align-content: center;
+}
+
+img {
+    width: 20%;
+    height: 35vh;
+
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.headh2 {
+    margin-left: 1rem;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Madlib section */
+
+.MadLib {
+    display: flex;
+    border: 3px solid black;
+}
+
+.MadLib section input label {
+
+    flex-direction: column;
+    
+}
+
+
+.MadLib div {
+
+    margin-left: .5rem;
+
+}
+
+.Result {
+    margin-right: 3rem;
+}
+
+input[type=submit] {
+    color: var(--white);
+    background-color: var(--grey-blue);
+}
+
+input[type=submit]:hover {
+    background-color: var(--grey-blue-hover);
+    cursor: pointer;
+}
+input {
+    width: 98%;
+    height: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    background-color: var(--white);
+}
+

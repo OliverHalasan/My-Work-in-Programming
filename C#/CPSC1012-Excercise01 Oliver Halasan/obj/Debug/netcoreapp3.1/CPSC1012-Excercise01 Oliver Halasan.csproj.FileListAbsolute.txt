@@ -1,0 +1,13 @@
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.exe
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.deps.json
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.runtimeconfig.json
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.runtimeconfig.dev.json
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.dll
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\bin\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.pdb
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.csprojAssemblyReference.cache
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.AssemblyInfoInputs.cache
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.AssemblyInfo.cs
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.csproj.CoreCompileInputs.cache
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.dll
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.pdb
+C:\Users\bless\Desktop\IT World\C#\CPSC1012-Excercise01 Oliver Halasan\obj\Debug\netcoreapp3.1\CPSC1012-Excercise01 Oliver Halasan.genruntimeconfig.cache

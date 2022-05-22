@@ -1,0 +1,4 @@
+AuthName "Please Login"
+AuthType Basic
+AuthUserFile  /home/jhalasan1/data/.htpasswd
+Require valid-user

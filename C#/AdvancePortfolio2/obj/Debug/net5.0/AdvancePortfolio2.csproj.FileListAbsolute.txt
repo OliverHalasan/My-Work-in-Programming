@@ -1,0 +1,16 @@
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.exe
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.deps.json
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.runtimeconfig.json
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.runtimeconfig.dev.json
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.dll
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\ref\AdvancePortfolio2.dll
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\bin\Debug\net5.0\AdvancePortfolio2.pdb
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.csprojAssemblyReference.cache
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.AssemblyInfoInputs.cache
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.AssemblyInfo.cs
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.csproj.CoreCompileInputs.cache
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.dll
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\ref\AdvancePortfolio2.dll
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.pdb
+C:\Users\bless\Documents\IT World\C#\AdvancePortfolio2\obj\Debug\net5.0\AdvancePortfolio2.genruntimeconfig.cache

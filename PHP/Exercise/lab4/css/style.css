@@ -1,0 +1,157 @@
+:root {
+    --black: #11151f;
+    --white: #fcfcfc;
+    --mid-grey: #f1f1f1;
+    --dark-grey: #d4d4d4;
+    --yellow: #e5b261; 
+    --grey-blue: #374456;
+    --grey-blue-hover: #283040
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--black);
+    background-color: #92A8D1;
+    width: 960px;
+    margin: 0 auto;
+    align-items: center;
+}
+nav {
+    margin-bottom: 1rem;
+    
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    margin-left: 2rem;
+    
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  
+}
+header {
+    background-color: #374456;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.description{
+    border: 2px solid #374456;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-top: 0rem;
+}
+.list {
+    font-size: 1.875rem;
+    margin-bottom: -0.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f1dca9;
+    height: 3rem;
+
+    border-top-left-radius: 0.5rem ;
+    border-top-right-radius: 0.5rem;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 20rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+}
+
+textarea {
+    height: 8rem;
+    width: 33%;
+    border-radius: 0.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.update a {
+    text-decoration: none;
+    color: black;
+  
+}
+.update ul {
+    list-style-type: none;
+    border: 2px solid #374456;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    width: 60%;
+    border-radius: 0.5rem;
+}
+.update li {
+    margin-top: .3rem;
+}
+
+.update a:hover{
+    color: #e5b261;
+}
+.delete a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid #374456;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.delete {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.success {
+    color: green;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 0.5rem;
+}
+
+.error{
+    color: red;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 0.5rem;
+}
+
+

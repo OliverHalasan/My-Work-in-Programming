@@ -1,0 +1,300 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+@font-face {
+	font-family: source-sans-pro;
+	src: url(../fonts/source-sans-pro/SourceSansPro-Light.otf);
+}
+
+nav{
+	background-color: #4f6864;
+	width: 0 auto;
+	height: 100px;
+}
+nav img{
+	float: left;
+	margin: 12px 15px 10px 12px;
+}
+
+nav h4 {
+	display: flex ;
+	color: #ffffff;
+	font-size: 18pt;
+	font-family: 'source-sans-pro';
+}
+nav h4{
+	float: left;
+	margin-top: 30px;
+}
+
+nav ul {
+	display: flex;
+	
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+nav a {
+	color: #ffffff;
+	font-family: 'source-sans-pro';
+	text-decoration: none;
+	margin-left: 37px;
+	font-size: 24px;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+}
+header{
+	background-image: url(../img/shade.png);
+	height: 600px;
+	width: 0 auto;
+
+}
+@font-face {
+	font-family: PlayfairDisplay;
+	src: url(../fonts/playfair-display/PlayfairDisplay-Regular.otf);
+}
+header h1{
+	font-size: 54px;
+	color: #ffffff;
+	font-family: 'PlayfairDisplay';
+	padding: 100px 445px 0px 48px;
+
+}
+header p {
+	font-size: 24px;
+	color: #ffffff;
+	font-family: 'source-sans-pro';
+	
+	padding: 30px 550px 0px 48px;
+	
+	
+}
+header a {
+	padding: 15px 40px;
+	margin-bottom: 65px;
+	margin-left: 45px;
+	margin-top: 40px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #4f6864 ;
+	color:#fff;
+	border-radius: 8px;
+	font-family: 'source-sans-pro';
+	font-size: 30px;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+main{
+	margin-bottom: 100px;
+	margin-top: 105px;
+	text-align: left;
+}
+
+main img{
+	float: left;
+	margin-right: 40px;
+}
+
+main h1 {
+	font-size: 66px;
+	margin-left: 100px;
+	text-align: center;
+	color: #19211f;
+}
+main p{
+	margin-bottom: 25px;
+	color: #19211f;
+}
+.txt-about-us{
+	font-size: 17px;
+	font-family: 'source-sans-pro';
+	line-height: 1.3;
+}
+.shipping{
+	font-size: 14px;
+	font-family: 'source-sans-pro';
+}
+
+.scrim-background{
+	background-image: url(../img/scrim.png);
+	text-align: center;
+	padding: 60px;
+	margin-bottom: 40px;
+	
+	
+}
+
+article h1{
+	color: #19211f;
+	background-color: #fff;
+	font-size: 42px;
+	border: 50px;
+	width: 56%;
+	margin: 0 auto;
+	font-family: 'PlayfairDisplay';
+
+}
+
+.article-right {
+	background-color: #0e1c1c;
+	color: #fff;
+	text-align: left;
+	font-size: 16px;
+	font-family: 'source-sans-pro';
+		
+}
+
+
+.article-right {
+	float: right;
+	width: 410px;
+	height: 499px;
+	padding-left: 30px;
+	padding-right: 40px;
+}
+.article-right h1{
+	font-size: 36px;
+	margin-bottom: 40px;
+	font-family: 'PlayfairDisplay';
+}
+
+.article-right p{
+	margin-bottom: 20px;
+	line-height: 20px;
+
+}
+
+.article-right a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'source-sans-pro';
+	font-size: 24px;
+	line-height: 110px;
+}
+
+.article-left h1{
+	font-size: 36px;
+	margin-top: 42px;
+	margin-bottom: 40px;
+	font-family: 'PlayfairDisplay';
+}
+.article-left{
+	float: left;
+	width: 405px;
+	height: 499px;
+}
+
+
+.article-left{
+	background-color: #0e1c1c;
+	color: #fff;
+	text-align: left;
+	font-size: 16px;
+	font-family: 'source-sans-pro';
+	padding-left: 30px;
+	padding-right: 45px;
+	
+	text-align: left;
+}
+
+.article-left p {
+	line-height: 20px;
+	padding-right: 25px;
+}
+
+.article-left a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'source-sans-pro';
+	font-size: 24px;
+	line-height: 100px;
+}
+
+
+
+.article-right a:hover{
+	text-decoration: underline;
+}
+.article-left a:hover{
+	text-decoration: underline;
+}
+
+
+.green-and-purple{
+	float: left;
+}
+
+.selective-focus {
+	float: right;
+}
+
+
+.bar {
+	display: inline-flex;
+	background-color: #19211f;
+	height: 1px;
+	width: 880px;
+	margin-left: 40px;
+	margin-top: 100px;
+}
+
+footer h1{
+	margin-bottom: 63px;
+}
+footer {
+ text-align: center;
+}
+
+footer img{
+	margin-top: 67px;
+}
+footer h1{
+	font-size: 18pt;
+	font-family: 'source-sans-pro';
+}
+.footer-position {
+	float: left;
+	width: 215px;
+	margin-left: 82px;
+}
+.margin-footer p{
+	margin-bottom: 35px;
+}
+.footer-position h2{
+	margin-bottom: 37px;
+}
+footer div p {
+	font-family:'source-sans-pro' ;
+	font-size: 24px;
+}
+@font-face{
+	font-family: 'source-sans-pro-bold';
+	src: url(../fonts/source-sans-pro/SourceSansPro-Bold.otf);
+}
+footer div h2{
+	font-family: 'source-sans-pro-bold';
+	font-size: 24px;
+}
+footer div a{
+	font-family:'source-sans-pro' ;
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+}
+.footer-position ul li a:hover {
+	text-decoration:underline;
+}

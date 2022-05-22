@@ -1,0 +1,101 @@
+﻿@page "{CategoryID?}"
+@model RazorPages.Pages.ExercisePages.QueryModel
+@{
+	ViewData["Title"]="Query Page";
+}
+<h1>Products by Category</h1>
+
+        @if(Model.HasFeedBack)
+        {
+            <p>@Model.FeedBack</p>
+        }
+
+        @if(Model.HasErrorMsg)
+        {
+            <p style="color:firebrick; font-weight:bold;">@Model.ErrorMsg</p>
+        }
+
+        <form method="post">
+            <label>
+                Select Category
+                <select asp-for="categoryid">
+                    <option value="0">Select Category</option>
+                    @foreach(var item in Model.Categories)
+            {
+                if (Model.categoryid == item.ValueId)
+                {
+                    <option value="@item.ValueId" selected>@item.DisplayText</option>
+                }
+                else
+                {
+                    <option value="@item.ValueId">@item.DisplayText</option>
+                }
+            }
+        </select>
+            </label>
+            <button type="submit">Search</button>
+              &nbsp;&nbsp;
+            <button type="submit" asp-page-handler="new">New Product</button>
+        </form>
+@if (Model.Products != null)
+    {
+    @if (Model.Products.Count() == 0)
+    {
+        <p style="color:blue; font-weight:bold;">This category has no products.</p>
+    }
+    else
+    {
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Sale Price</th>
+                    <th>Discount</th>
+                    <th>Unit Size</th>
+                    <th>Taxable</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model.Products)
+                {
+                    <tr>
+                        <td>
+                            <a href="/ExercisePages/CRUD/@item.ProductID">
+                                @item.Description</a>
+                        </td>
+                        <td>@item.Price</td>
+                        <td>@item.SalePrice</td>
+                        <td>@item.Discount</td>
+                        <td>@item.UnitSize</td>
+                        <td><input type="checkbox" checked=@item.Taxable/></td>
+                    </tr>
+                }
+            </tbody>
+
+            <tfoot>
+                <tr colspan="3">
+                    <td>
+                    @{
+                        foreach (var pageRef in Model.Pager)
+                        {
+                            if (pageRef == Model.Pager.CurrentPage)
+                                {
+                                <b>@pageRef.Text</b>
+                                }
+                                else
+                                {
+                                    <a title="Page @pageRef.Page" 
+                                    asp-asp-page="/ExercisePages/Query" 
+                                    asp-route-currentpage="@pageRef.Page">
+                                    @pageRef.Text</a>
+                                }
+                        }
+                    }
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    }
+   }

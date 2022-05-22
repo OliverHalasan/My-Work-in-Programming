@@ -1,0 +1,259 @@
+*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body
+{
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	background-color: #333;
+	margin: 0;
+}
+.container
+{
+	margin: 0 auto;
+	width: 968px;
+}
+header, footer, main, .banner
+{
+	background-color: #FFF;
+}
+.navbar
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 60px;
+	line-height: 60px;
+}
+.navbar li
+{
+	display: inline;
+}
+.navbar li a
+{
+	display: inline-block;
+	padding: 0 15px;
+	text-decoration: none;
+}
+.banner img
+{
+	width: 100%;
+}
+.column
+{
+	float: left;
+	/*margin between columns is 16px[968-952 = 16]*/
+	margin-right: 16px;
+}
+/*to fix the too wide layout we can strip it from the last child*/
+.column:last-child
+{
+	margin-right: 0;
+}
+/*start at 968px and divide by 12 to get rounded to 82 so subtract 82 for each level*/
+.span12 
+{
+	width: 968px;
+}
+.span11
+{
+	width: 886px;
+}
+.span10
+{
+	width: 804px;
+}
+.span9
+{
+	width: 722px;
+}
+.span8
+{
+	width: 640px;
+}
+.span7
+{
+	width: 558px;
+}
+.span6
+{
+	width: 476px;
+}
+.span5
+{
+	width: 394px;
+}
+.span4
+{
+	width: 312px;
+}
+.span3
+{
+	width: 230px;
+}
+.span2
+{
+	width: 148px;
+}
+.span1
+{
+	width: 66px;
+}
+.clearfix:before, .clearfix:after
+{
+	content: "";
+	display: table;
+}
+.clearfix:after
+{
+	clear: both;
+}
+.clearfix
+{
+	zoom: 1;
+	/*IE 6/7 fix*/
+}
+h2, h1, h3
+{
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Anton', sans-serif;
+}
+h2 + p
+{
+	margin-top: 0;
+}
+main, footer 
+{
+  padding: 40px 0; 
+}
+main > div > div
+{
+	padding: 10px 0;
+}
+main p
+{	
+  margin-top: 0;
+  font-size: 14px;
+}
+.button
+{
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: #444;
+	color: #fff;
+	border-radius: 10px;
+	display: inline-block;
+}
+.button:hover
+{
+	color: #444;
+	background-color: #ddd;
+}
+footer .column:first-child p
+{
+	margin: 0;
+	padding: 5px 0;
+}
+footer .column:last-child ul
+{
+	margin: 0;
+}
+footer table
+{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100px;
+}
+footer th
+{
+	text-align: right;
+	padding-right: 10px;
+	/*padding: 0;*/
+	/*border-right: 2px solid #000;*/
+	font-weight: normal;
+}
+footer th
+{
+	
+}
+footer ul
+{
+	list-style-type: none;
+	float: right;
+	text-align: right;
+}
+footer ul li
+{
+	padding: 3px 0;
+}
+header img, .alignTop
+{
+	vertical-align: top;
+}
+footer ul, footer a, footer table, footer p
+{
+	font-size: 14px;
+}
+
+/*Events Page Stuff*/
+figure
+{
+	margin: 0;
+	position: relative;
+}
+figcaption
+{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+}
+figure img
+{
+	width: 100%;
+}
+footer a
+{
+	text-decoration: none;
+}
+
+.list ul
+{
+	border: 1px solid #000;
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px 40px 20px 20px;
+	margin-left: 40px;
+}
+.list p
+{
+	margin-bottom: 6px;
+}
+form table
+{
+	width: 100%;
+}
+form table td
+{
+	padding: 5px 0;
+}
+form table input[type="text"], form table select, form table textarea
+{
+	width: 100%;
+}
+form table textarea
+{
+	height: 150px;
+}
+.noBullet
+{
+	list-style-type: none;
+	padding-left: 0;
+}

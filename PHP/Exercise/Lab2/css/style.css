@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+
+}
+nav li {
+    margin-right: 1rem;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+form{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40rem;
+    margin-right: 40rem;
+
+}
+.info{
+    border: 1px solid black;
+    margin-left: 40rem;
+    margin-right: 40rem;
+
+}
+label,input,select{
+    margin: 0 5rem 0 5rem;
+}
+label:first-child {
+    margin-top: 1rem;
+}
+input:last-child {
+    margin-bottom: 1rem;
+}
+

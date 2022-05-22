@@ -1,0 +1,173 @@
+/*add header styles*/
+header
+{
+	background-color: #f2ece7;
+	padding: 16px;
+}
+/*update logo image in html of home page*/
+/*logo is too big*/
+.logo
+{
+	width: 100%;
+	display: block;
+}
+.logo img
+{
+	width: 100%;
+}
+/*with adding the padding to the header now our nav is not centered and should be aligned to the right*/
+.navbar
+{
+	/*height: 90px;*/
+	height: auto;
+	line-height: 90px;
+	float: right;
+}
+.navbar a
+{
+	color: #e74c3c;
+	/*adjust line height so hover is better*/
+	line-height: 3;
+}
+.navbar a:hover
+{
+	background-color: #77D68C;
+	color: #e74c3c;
+}
+/*lets update our banner image in the html*/
+/*image is too big*/
+.banner > .container > img
+{
+	height: 500px;
+	float: left;
+	/*overwrite the width 100%*/
+	width: auto;
+}
+/*and now the white doesn't extend all the way. lets add the clearfix class to the container*/
+/*lets add a link on the right side to the donation page*/
+.bannerLink
+{
+	margin-top: 80px;
+	padding-top: 16px;
+	font-family: "Arial Black", arial, sans-serif;
+	color: #383838;
+	text-transform: uppercase;
+	border-top: 12px double #e74c3c;
+	border-bottom: 12px double #e74c3c;
+	float: right;
+	margin-right: 20px;
+}
+.bannerLink h1 
+{
+  font-size: 74px;
+  line-height: 1em;
+}
+.bannerLink p 
+{
+  /*font-size: 1.5em;*/
+  font-size: 24px;
+}
+.advance-button {
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  /* padding: 1ex 1em; */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  background: #e74c3c;
+}
+.advance-button img {
+  height: 100%;
+  width: auto;
+}
+/*color scheme designer to get complementary color of orangy one*/
+.advance-button:hover
+{
+	background-color: #2DAF4A;
+}
+
+/*/*lets also update the button & its hover color to be the same orange and green*/
+.button
+{
+	background-color: #e74c3c;
+}
+.button:hover
+{
+	background-color: #2DAF4A;
+}
+/*lets add a background to the main*/
+main
+{
+	background-color: #f2ece7;
+}
+/*with adding the background colour now it looks like there's a white border at the bottom of the banner image*/
+.banner > .container > img
+{
+	vertical-align: top;
+}
+/*lets change out the images for our feature pets. Our client has decided to feature one cat and one dog*/
+
+/*our client decided they wanted the two buttons side by side in a group*/
+.button-group .button
+{
+	width: 50%;
+	text-align: center;
+}
+.button-group .button:first-of-type 
+{
+  border-right: 1px solid #f2ece7;
+  border-radius: 5px 0px 0px 5px;
+}
+.button-group .button:last-of-type 
+{
+  border-radius: 0px 5px 5px 0px;
+}
+/*this still doesn't quite work. lets add the clearfix class tothe p before it*/
+/*and add float left to the button class*/
+.button-group .button
+{
+	float: left;
+}
+/*lets do the footer*/
+footer
+{
+	background-color: #e74c3c;
+	color: #ffffff;
+}
+footer a
+{
+	color: #ffffff;
+}
+footer a:hover
+{
+	color: #2DAF4A;
+}
+
+/*now lets style the rest of the pages
+
+1. copy the link to the new stylesheet
+2. add class logo and update logo image
+3. Client decided to keep banner image on each page so copy it over
+*/
+
+/*last step is the active class. Everyone likes to see the nav reflect which page you're currently on*/
+nav a.active
+{
+	background-color: #A01607;
+	color: #ffffff;
+}
+
+/*lets not forget IE. Open page in IE - main has no background*/
+main
+{
+	display: block;
+}
+/*in mine the table in the footer breaks weirdly*/
+/*lets add*/
+footer table
+{
+	/*table-layout: fixed;*/
+}
+/*this way we aren't letting the content decide the widths of the columns. If we don't specify it will try 50/50 */
