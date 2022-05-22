@@ -1,0 +1,159 @@
+﻿@page
+@model BikesRUs.Pages.SalesPages.IndexModel
+@{
+    ViewData["Title"]="Sales";
+}
+
+<h1>Sales - Anureet Singh</h1>
+
+<form method="post" id="redirectCategorySelection" asp-page-handler="Category"></form>
+
+
+<form method="post">
+    <label>
+        <select id="categorySelection" asp-for="SelectedCategoryID" onchange="this.form.submit()" form="redirectCategorySelection">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Categories)
+            {
+                <option value="@item.valueId">@item.DisplayText</option>
+            }
+        </select>
+
+        <select id="partSelection" asp-for="SelectedPartID">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Parts)
+            {
+                <option value="@item.valueId">@item.DisplayText</option>
+            }
+        </select>
+    </label>
+
+    <input type="number" id="AddQuantity" asp-for="AddQuantity" />
+
+    <button type="submit" id="partAddButton" asp-page-handler="Add">Add</button>
+
+    <table id="submissionTable">
+        <thead>
+            <tr>
+                <th>ItemID</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        
+        <tbody>
+        @foreach (var item in Model.SaleDetails)
+        {
+            <tr>
+                <td>@item.PartID</td>
+                <td>@item.PartDescription</td>
+                <td>@item.Quantity</td>
+                <td>@item.Quantity</td>
+                <td>@item.Total</td>
+            </tr>
+            
+        }
+
+        </tbody>
+        
+        
+    </table>
+
+  @*  @if(Model.SelectedCategoryID != 0 && Model.SelectedPartID != 0)
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            @foreach(var part in Model.Parts)
+            {
+                <tr>
+                    <td>@part.PartID</td>
+                    <td>
+                        <button type="button">Delete</button>
+                        <textarea inputmode="numeric"></textarea>
+                        <button type="reset">Reset</button>
+                    </td>
+                    <td>@part.Price</td>
+
+                </tr>
+            }
+        </table>*@
+    @*}*@
+</form>
+
+@*<script type="text/javascript">
+    var addButton = document.querySelector('#partAddButton')
+    addButton.addEventListener('click', addPart)
+    var temp = document.querySelector('#partSelection')
+    var table = document.querySelector('#submissionTable')
+    
+    function addPart(){
+        console.log('options', temp.options[temp.selectedIndex].text)
+
+                        var tbodyRef = document.getElementById('submissionTable').getElementsByTagName('tbody')[0];
+
+                        // Insert a row at the end of table
+                        var newRow = tbodyRef.insertRow();
+
+                        // Insert a cell at the end of the row
+                        var itemIDCell = newRow.insertCell();
+
+                        // Append a text node to the cell
+                        var itemIDText = document.createTextNode(temp.value);
+                        itemIDCell.appendChild(itemIDText);
+
+                        //Item name
+
+                        // Insert a cell at the end of the row
+                        var itemCell = newRow.insertCell();
+
+                        // Append a text node to the cell
+                        var itemText = document.createTextNode(temp.options[temp.selectedIndex].text);
+                        itemCell.appendChild(itemText);
+
+
+                        //QUANTITY
+                        // Insert a cell at the end of the row
+                        var qtyCell = newRow.insertCell();
+
+                        // Append a text node to the cell
+                        var qtyText = document.createTextNode(document.querySelector('#AddQuantity').value);
+                        qtyCell.appendChild(qtyText);
+
+                        //PRICE
+                        // Insert a cell at the end of the row
+                        var priceCell = newRow.insertCell();
+
+                        // Append a text node to the cell
+                        var price = @Model.Parts.Where(x => x.valueId == )
+                        var priceText = document.createTextNode('test');
+                        priceCell.appendChild(priceText);
+
+                        //TOTAL
+                        // Insert a cell at the end of the row
+                        var totalCell = newRow.insertCell();
+
+                        // Append a text node to the cell
+                        var totalText = document.createTextNode('test');
+                        totalCell.appendChild(totalText);
+
+    }*@
+
+   
+
+
+    
+
+
+
+</script>

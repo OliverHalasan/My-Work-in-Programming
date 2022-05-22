@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <p>Below are the team member names with the assigned scenario/subsystem:</p>
+    <ul>
+        <li>
+            John Oliver Halasan: <a asp-area="" asp-page="/PurchasingPages/Purchasing">Purchasing</a> Scenario
+        </li>
+        <li>
+            Muntader Al Nasser: Receiving <a asp-area="" asp-page="/Receiving/Index">Home Page</a> | <a asp-area="" asp-page="/Receiving/Receiving">Management Page</a>
+        </li>
+        <li>
+            Jee-Ann Ramos: <a asp-area="" asp-page="/ServicingPages/Servicing">Servicing</a> Scenario
+        </li>
+        <li>
+            Anureet Singh: <a asp-area="" asp-page="/SalesPages/Sales">Sales</a> Scenario
+        </li>
+    </ul>
+
+
+</div>

@@ -1,0 +1,129 @@
+﻿@page "{lastname?}/{CustomerId?}"
+@model BikesRUs.Pages.ServicingPages.ServicingModel
+@{
+    ViewData["Title"]="Servicing";
+}
+
+@section CustomCSS{
+    <partial name="_MyCustomCSS" />
+}
+
+@if (Model.HasFeedBack)
+{
+    <blockquote class="success">@Model.FeedBackMessage</blockquote>
+}
+
+@if (Model.HasError)
+{
+    <blockquote class="error">
+        @Model.ErrorMessage
+        <ul>
+            @foreach(var detail in Model.ErrorDetails)
+            {
+                <li>@detail</li>
+            }
+        </ul>
+    </blockquote>
+}
+
+<section class="setflex">
+    @*FIRST COLUMN*@
+    <div class="onehalf">
+        <h1>Servicing</h1>
+        <h2>
+            New
+            <button type="submit" asp-page-handler="Clear" style="background-color:black">Clear</button>
+            <button type="submit" asp-page-handler="RegisterJob">Register Job</button>
+        </h2>
+        <form method="post">
+            <label>
+                Customer 
+                <input type="text" asp-for="lastname" />
+                <button type="submit" asp-page-handler="CustomerSearch" title="Fetch customers">SEARCH</button>
+            </label>
+        </form>
+        @if (!string.IsNullOrWhiteSpace(Model.lastname))
+        {
+            if(Model.CustomerInfo.Count() == 0)
+            {
+                <p style="color:red;">No customers matching search request</p>
+            }
+            else
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model.CustomerInfo)
+                        {
+                            <tr>
+                                <td>
+                                    <form method="post">
+                                        <input type="hidden" value="@item.CustomerId"
+                                            asp-for="selectedcustomerid">
+                                        <button type="submit" title="Select Customer"
+                                            asp-page-handler="CustomerVehicleSearch">
+                                            Select
+                                        </button>
+                                    </form>
+                                </td>
+                                <td>@item.Name</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Address</td>
+                            </tr>
+                        }
+                    </tbody>
+@*                    <tfoot>
+                        <tr>
+                            <td colspan="6">
+                                @{
+                                    foreach (var pageRef in Model.Pager)
+                                    {
+                                        if (pageRef == Model.Pager.CurrentPage)
+                                        {
+                                            <b>@pageRef.Text</b>
+                                        }
+                                        else
+                                        {
+                                            <a title="Page @pageRef.Page" asp-page="/ServicingPages/Servicing"
+                                            asp-route-currentpage ="@pageRef.Page">@pageRef.Text</a>
+                                        }
+                                    }
+                                }
+                            </td>
+                        </tr>
+                    </tfoot>*@
+                </table>
+            }
+        }
+        <form method="post">
+            <label>
+                VIN
+                <select asp-for="selectedvehicleidentification">
+                    @foreach(var item in Model.CustomerVehicleInfo)
+                    {
+                        <option value="@item.VehicleIdentification">@item.Vehicle</option>
+                    }
+                </select>
+                <button type="submit" asp-page-handler="JobSearch" title="Fetch customers">SEARCH</button>
+            </label>
+        </form>
+    </div>
+    @*SECOND COLUMN*@
+    <div class="onehalf">
+        <form method="post">
+            <p>
+            Service
+            <input type="text" />
+            <button type="submit" asp-page-handler="Add" style="background-color:blue">Add</button>
+            <button type="submit" asp-page-handler="Add" style="background-color:black">Reset</button>
+            </p>
+        </form>
+    </div>
+</section>

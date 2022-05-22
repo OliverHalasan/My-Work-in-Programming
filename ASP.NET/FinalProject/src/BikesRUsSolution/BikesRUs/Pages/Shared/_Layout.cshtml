@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BikesRUs</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+
+    @*for holiday css*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BikesRUs.styles.css" asp-append-version="true" />
+
+    @RenderSection("CustomCSS", required: false)
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li>
+                <a asp-area="" asp-page="/Index">
+                    <img src=~/img/logo.jpg
+                        alt="Logo image"
+                        title="Go to Home" />
+                </a>
+            </li>
+            <li>
+                <a asp-area="" asp-page="/PurchasingPages/Purchasing">Purchasing</a>
+            </li>
+            <li>
+                <a asp-area="" asp-page="/Receiving/Index">ReceivingHome</a>
+                    <ul>
+                        <li><a asp-area="" asp-page="/Receiving/Receiving">Receiving</a></li>
+                    </ul>
+            </li>
+            <li>
+                <a asp-area="" asp-page="/ServicingPages/Servicing">Servicing</a>
+            </li>
+            <li>
+                <a asp-area="" asp-page="/SalesPages/Sales">Sales</a>
+            </li>
+            <li>
+                <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </li>
+          </ul>
+          <partial name="_LoginPartial" />
+        </nav>
+
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2022 - BikesRUs - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

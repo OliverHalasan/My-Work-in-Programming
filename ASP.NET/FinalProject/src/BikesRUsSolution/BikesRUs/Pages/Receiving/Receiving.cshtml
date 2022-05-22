@@ -1,0 +1,180 @@
+﻿@page "{PurchaseOrderId?}" 
+@model BikesRUs.Pages.ReceivingPages.ReceivingModel
+@{
+    ViewData["Title"]="Receiving";
+}
+
+@section CustomCSS{
+    <partial name="_MyCustomCSS" />
+}
+
+@if (Model.HasFeedBack)
+{
+
+    <blockquote class="success">@Model.FeedBackMessage</blockquote>
+}
+
+@if (Model.HasError)
+{
+    <blockquote class="error">
+        @Model.ErrorMessage
+        <ul>
+            @foreach(var detail in Model.ErrorDetails)
+            {
+                <li>@detail</li>
+            }
+        </ul>
+    </blockquote>
+}
+
+<form method="post">
+    <div>
+        @if (Model.OutstandingOrderInfo != null)
+        {
+           <div class="setFlex">
+                <h2>Purchase Order Details</h2>
+                <h3>Employee: @Model.EmployeeName</h3>
+           </div>
+           <div class="setflex" style="margin-bottom: .5rem; justify-content: space-between;">
+               <p><span style="font-weight:700">PO#</span> @Model.OutstandingOrderInfo.PurchaseOrderNumber </p>
+               <p><span style="font-weight:700">Vendor</span> @Model.OutstandingOrderInfo.VendorName</p>
+               <p><span style="font-weight:700">Contact</span> @Model.OutstandingOrderInfo.Phone</p>
+           </div>
+           <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>PartID</th>
+                            <th>Description</th>
+                            <th>O/Qty</th>
+                            <th>O.Std</th>
+                            <th>RecQty</th>
+                            <th>Return</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OutstandingOrderInfo.OutstandingOrderDetails)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="ReceivedItems.Index" value="@item.PurchaseOrderDetailId">
+                                    <input type="hidden" name="ReceivedItems[@item.PurchaseOrderDetailId].PurchaseOrderDetailId" value="@item.PurchaseOrderDetailId">
+                                    <input type="hidden" name="ReceivedItems[@item.PurchaseOrderDetailId].PartID" value="@item.PartID">
+                                </td>
+                                <td>@item.PartID</td>  
+                                <td>@item.Description</td>
+                                <td>@item.OriginalQty</td>
+                                <td>@item.OutstandingQty</td>
+                                <td><input type="number" name="ReceivedItems[@item.PurchaseOrderDetailId].ReceivedQty" min="0" max="@item.OutstandingQty"></td>
+                                <td><input type="number" name="ReceivedItems[@item.PurchaseOrderDetailId].Return" min="0"></td>
+                                <td><input type="text" name="ReceivedItems[@item.PurchaseOrderDetailId].Reason"></td>
+                            </tr>
+                        }          
+                    </tbody>
+                </table>
+           </div>
+           <div class="setflex" style="gap:1rem; margin: 2rem 0">
+                    <div>
+                        <button type="submit" asp-page-handler="receive" style="background-color:green; width:8rem"> Receive </button>
+                    </div>
+                    <div class="setflex" style="gap: 1rem; width:80%">
+                            <button type="submit" asp-page-handler="forceclose" style="background-color:green; width: 8rem"> Force Close </button>
+                            <input style="margin-left: .5rem"type="text" asp-for="Notes" placeholder="--- reason for closing ---">
+                    </div>
+           </div>
+        }
+        else if (Model.OutstandingOrders.Count() != 0)
+        {
+            <div class="setFlex">
+                <h2>Outstanding Orders</h2>
+                <h3>Employee: @Model.EmployeeName</h3>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PO #</th>
+                            <th>Date</th>
+                            <th>Vendor</th>
+                            <th>Contact</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OutstandingOrders)
+                        {
+                            <tr>
+                                <td>@item.PurchaseOrderNumber</td>  
+                                <td>@item.OrderDate</td>
+                                <td>@item.VendorName</td>
+                                <td>@item.Phone</td>
+                                <td>
+                                    <a style="color:blue; font-weight:600" href="Receiving/@item.PurchaseOrderID">View Order</a>
+                                </td>
+                            </tr>
+                        }          
+                    </tbody>
+            </table>
+            </div>
+        }
+        else
+        {
+            <h2>No Available Outstanding Purchase Orders</h2>
+            <h3>Employee: @Model.EmployeeName</h3>
+        }
+    </div>
+</form>
+
+@if (Model.PurchaseOrderId != null && Model.PurchaseOrderId > 0)
+{
+    <div style="margin-top: 4rem">
+        <h2>Unordered Items List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Item Description</th>
+                    <th>Vendor Part ID</th>
+                    <th>Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.UnorderedItemsList != null)
+                {
+                    @foreach (var item in Model.UnorderedItemsList)
+                    {
+                        <tr style="text-align: center">
+                            <td>
+                                <form method="post" onclick="return confirm('Are you sure you want to delete this item ?')">
+                                    <input type="hidden" value="@item.VendorPartNumber" asp-for="unorderedItemId">
+                                    <button type="submit" asp-page-handler="Delete" style="background-color:green"> Delete </button>
+                                </form>
+                            </td>
+                            <td>@item.Description</td>
+                            <td>@item.VendorPartNumber </td>
+                            <td>@item.Qunatity</td>
+                        </tr>
+                    }
+
+                }
+                <form method="post">
+                            <tr>
+                                <td style="width: 20%">
+                                        <button type="submit" asp-page-handler="insert" style="background-color:green"> Insert </button>
+                                        <button type="submit" asp-page-handler="clearform" style="background-color:green"> Clear </button>
+                                
+                                </td>
+                                <td><input type="text" asp-for="UnorderedItems.Description"></td>
+                                <td><input type="text" asp-for="UnorderedItems.VendorPartNumber"></td>
+                                <td><input type="number" asp-for="UnorderedItems.Qunatity" min="0"></td>
+                            </tr> 
+                        </form>
+                    </tbody>
+                </table>
+            </div> 
+}
+
+
+

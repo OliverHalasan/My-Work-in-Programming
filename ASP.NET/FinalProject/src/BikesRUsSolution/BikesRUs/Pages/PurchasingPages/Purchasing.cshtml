@@ -1,0 +1,200 @@
+﻿@page "{vendorid?}"
+@model BikesRUs.Pages.PurchasingPages.PurchasingModel
+@{
+    ViewData["Title"]="Purchasing";
+}
+
+
+<h1>Purchasing - John Oliver Halasan</h1>
+ @if(Model.HasFeedBack)
+        {
+            <p>@Model.FeedBack</p>
+        }
+
+        @if(Model.HasErrorMsg)
+        {
+            <p style="color:firebrick; font-weight:bold;">@Model.ErrorMsg</p>
+        }
+
+<form method="post">
+<label>
+        Select a vendor:
+        @if (Model.vendorid.HasValue)
+        {
+        <select asp-for="vendorid" disabled>
+            <option value="0">Select a vendor</option>
+            @foreach (var item in Model.VendorList)
+            {
+                if (Model.vendorid == item.ValueId)
+                {
+                    <option value="@item.ValueId" selected>@item.DisplayText</option>
+                }
+                else
+                {
+                    <option value="@item.ValueId">@item.DisplayText</option>
+                }
+            }
+        </select>
+        }
+        else { 
+            <select asp-for="vendorid">
+                <option value="0">Select a vendor</option>
+                @foreach (var item in Model.VendorList)
+                {
+                    if (Model.vendorid == item.ValueId)
+                    {
+                        <option value="@item.ValueId" selected>@item.DisplayText</option>
+                    }
+                    else
+                    {
+                        <option value="@item.ValueId">@item.DisplayText</option>
+                    }
+                }
+            </select>
+        }
+    </label>
+    <button type="submit">Find Order</button>
+
+
+@if (Model.vendorid.HasValue && Model.vendorid != 0)
+{
+    <p>
+        Phone: @Model.Vendorsinfo.Phone;
+        City: @Model.Vendorsinfo.City;
+        PO# @(Model.PurchaseOrderinfo.PurchaseOrderNumber == 0 ? "New Order" : Model.PurchaseOrderinfo.PurchaseOrderNumber)
+        
+    </p>
+            <div class="setflex">
+            <section class="lefthalfpage">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>QOH</th>
+                            <th>ROL</th>
+                            <th>QOO</th>
+                            <th>Buffer</th>
+                            <th>Price</th>
+                            <td></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var part in Model.recommendedParts)
+                        {
+                        <tr>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].PartID" value="@part.Name" />
+                                @part.PartID
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].Description" value="@part.Description" />
+                                @part.Description
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].QuantityOnHand" value="@part.QuantityOnHand" />
+                                @part.QuantityOnHand
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].ReorderLevel" value="@part.ReorderLevel" />
+                                @part.ReorderLevel
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].QuantityOnOrder" value="@part.QuantityOnOrder" />
+                                @part.QuantityOnOrder
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].QuantityToOrder" value="@part.QuantityToOrder" />
+                                @(part.ReorderLevel - (part.QuantityOnHand - part.QuantityOnOrder) < 0 ?
+                                0 : part.ReorderLevel - (part.QuantityOnHand - part.QuantityOnOrder))
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts[@part.Name].PurchasePrice" value="@part.PurchasePrice" />
+                                @part.PurchasePrice
+                            </td>
+                            <td>
+                                <input type="hidden" name="recommendedParts.Index" value="@part.Name" />
+                                <button type="submit" name="SelectedPart" value="@part.Name" asp-page-handler="AddPart">Add</button>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                
+            </section>
+
+            <section class="righthalfpage">
+                <button type="submit">New Order</button>
+                <button type="submit">Place Order</button>
+                <button type="submit" asp-page-handler="Delete" onclick="return confirm('Are you sure you would like to delete the purchase order?')">Delete Order</button>
+                <button type="submit" asp-page-handler="Clear" onclick="return confirm('Are you sure you would like to clear the page?')">Clear</button>
+
+                <p>
+                    Subtotal: @Model.PurchaseOrderinfo.SubTotal &nbsp;&nbsp;
+                    GST: @Model.PurchaseOrderinfo.TaxAmount&nbsp;&nbsp;
+                    Total: @Model.PurchaseOrderinfo.Total
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>QOH</th>
+                            <th>ROL</th>
+                            <th>QOO</th>
+                            <th>QTO</th>
+                            <th>Price</th>
+                            <td></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var part in Model.PurchaseOrderDetails)
+                        {
+                        <tr>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails.Index" value="@part.Name" />
+                                <button type="submit" name="SelectedPart" value="@part.Name" asp-page-handler="RemovePart">Remove</button>
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].PartID" value="@part.PartID" />
+                                @part.PartID
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].Description" value="@part.Description" />
+                                @part.Description
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].QuantityOnHand" value="@part.QuantityOnHand" />
+                                @part.QuantityOnHand
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].ReorderLevel" value="@part.ReorderLevel" />
+                                @part.ReorderLevel
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].QuantityOnOrder" value="@part.QuantityOnOrder" />
+                                @part.QuantityOnOrder
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].QuantityToOrder" value="@part.QuantityToOrder" />
+                                <input type="number" value="@part.QuantityToOrder" />
+                            </td>
+                            <td>
+                                <input type="hidden" name="purchaseOrderDetails[@part.Name].PurchasePrice" value="@part.PurchasePrice" />
+                                @part.PurchasePrice
+                            </td>
+                            <td>
+                                <button type="submit">Refresh</button>
+                            </td>
+                        </tr>
+                        } 
+                    </tbody>
+                </table>
+            </section>
+        </div>
+}
+</form>

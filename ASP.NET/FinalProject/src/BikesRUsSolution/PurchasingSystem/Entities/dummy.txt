@@ -1,0 +1,6 @@
+﻿namespace BikesRUs.Pages.PurchasingPages
+{
+    public class dummy
+    {
+    }
+}

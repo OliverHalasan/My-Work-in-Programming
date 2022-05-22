@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-BikesRUs-B4CA1B4C-0725-4AAE-BE90-F1B51ECE4B77</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Purchasing\**" />
+    <Content Remove="Purchasing\**" />
+    <EmbeddedResource Remove="Purchasing\**" />
+    <None Remove="Purchasing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\img\dummy.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\dummy.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppSecurity\AppSecurity.csproj" />
+    <ProjectReference Include="..\PurchasingSystem\PurchasingSystem.csproj" />
+    <ProjectReference Include="..\ReceivingSystem\ReceivingSystem.csproj" />
+    <ProjectReference Include="..\SalesSystem\SalesSystem.csproj" />
+	<ProjectReference Include="..\ServicingSystem\ServicingSystem.csproj" />
+  </ItemGroup>
+
+</Project>
